@@ -10,7 +10,7 @@
 
     </ul>
      <h3>Add here</h3>
-    <form action="{% url 'rating' %}" method="post"> 
+    <form action="{% url 'add' %}" method="post"> 
         {% csrf_token %}
         {{ form }}
         <input type="submit" name="Add">
