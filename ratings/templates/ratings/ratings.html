@@ -7,8 +7,8 @@
 <body>
     <h2>List of Professors Avaliable for ratings</h2>
     <ul>
-        {% for professor in professors %}
-         <li>{{ professor }}</li>
+        {% for rating in professors %}
+         <li>{{ rating.professor }} has score of {{rating.rating}}</li>
         {% endfor %}
 <h1>Add your professors</h1>
 <h2><a href="{% url 'add'%}"">ADD</a></h2>
