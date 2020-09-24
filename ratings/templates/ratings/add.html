@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Your Professors</title>
+</head>
+<body>
+    <h1>Add your professor if required here in order to rate them!</h1>
+     
+
+    </ul>
+     <h3>Add here</h3>
+    <form action="{% url 'rating' %}" method="post"> 
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" name="Add">
+    </form>
+    
+</body>
+</html>
